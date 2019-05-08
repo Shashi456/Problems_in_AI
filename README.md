@@ -13,6 +13,8 @@
   - Understanding Language is not just about assimilation but also about appreciating and extrapolating from it.
   - Current problems for NLI include SNLI and MNLI, but is predicting a result from a premise and hypothesis true NLI is something we should explore, maybe a reformalization of the task can also be looked at. 
 - AI peer review<sup>[[3]](https://www.wired.com/2017/02/ai-can-solve-peer-review-ai-can-solve-anything/)</sup>
+- Pure Abstractive summarization
+  - I think what we currently are stuck at is solving the dataset, in this case the CNN-Daily Mail Dataset, which has its own flaws and is skewed towards extractive summarization. 
 
 
 
@@ -26,3 +28,15 @@
 - Fair AI systems and an objective gauge of Fairness in Ai systems <sup>[[citation needed]]()</sup>
   - In the past year or so, we have seen how AI systems are unfair and that this is a function of the data they have been trained on because human curation has let the biases of humans seep into the data and that data inherently when rawly collected has biases imbued as well. 
   - To solve this problem, One of the primary things to do is what is the meaning of fairness and how do you objectively gauge it?
+  
+  
+
+
+## AI Safety<sup>[[4]](https://arxiv.org/pdf/1606.06565.pdf)</sup>
+
+- Avoiding Negative Side Effects 
+- Avoiding Reward Hacking
+- Scalable Oversight 
+- Safe Exploration 
+- Robustness to Distributional Shift
+
