@@ -32,18 +32,41 @@
   
 
 
-## AI Safety<sup>[[4]](https://arxiv.org/pdf/1606.06565.pdf)</sup>
+## AI Safety
 
-- Avoiding Negative Side Effects 
+[ The following problems were raised by the paper [here](https://arxiv.org/pdf/1606.06565.pdf)]
+
+The following problems are problems of Accidental AI risks, where accidents are defined as uninted and harmful behavior that might emerge from Machine Learning systems.
+
+- Avoiding Negative Side Effects
+  - One thing we've found about RL agents is when they tend to optimize over an objective function it tends to explore the environment thoroughly(something which is desired), but within a multi-faceted environment, that might not be desired and can lead to very bad consequences.
+  - So the problem here is to design objectives which optimize on X but avoiding side effects. 
+  - The final outcome of these approaches need to limiting the effects of an ai agent on the environment.
+  - Some approaches that can be explored here are : 
+    - Define an Impact Regularizer 
+    - Learn an Impact Regularizer
+    - Penalize Influence
 - Avoiding Reward Hacking
-- Scalable Oversight 
-- Safe Exploration 
-- Robustness to Distributional Shift
+  - Rl agents often when trying to optimize on a reward function, sometimes find loopholes in the environment/system and basically exploit this to gain high rewards. Although smart, this is something that is not desired, this can be basically thought of as reward hacking. 
+  - Some Approaches that can be looked at are as follows: 
+    - Adversarial Reward Functions 
+    - Reward Capping
+    - Multiple Rewards [ Has an active area of research] 
+- Scalable Oversight<sup>[[4]](https://ai-alignment.com/semi-supervised-reinforcement-learning-cf7d5375197f)</sup>
+  - Designing Reward functions is a very difficult task, and even though we are successful at RL, it's somewhat limited by this designing because a complex reward function can't really have an objective gauge so we instead rely on cheap approximations which just work in a current problem.
+  - Scalable oversight is about when humans are involved in the process, we have limited budget of how much we can help the system, so how do we design RL systems which can be independent yet perform well. One approach spoken about in the paper is Semi-supervised RL. 
+  - A few approaches to look at are as follows : 
+    - Hierarchichal Reinforcement Learning [Being worked upon currently, has an active area of research].
+- Safe Exploration [ Has an Active area of Research ] 
+  - Reinforcement Learning mostly depends on exploring environments, exploring an environment also entails the risks that the environment might present. Although it's inexpensive in simulations, since AI systems are becoming more autonomous and real world, we need some ways so that agents explore environments without causing insidious harm. 
 
 
 
 
+TODO : 
+  - [ ] Computer Vision 
+  - [ ] Reinforcement Learning 
+  - [ ] AI Policy
+  - [ ] Adding more problems to other key areas.
 
-<?--- ## Computer Vision
-## Reinforcement Learning 
--->
+
